@@ -1,0 +1,80 @@
+.Toolbar {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+    /* background-color: lightblue; */
+}
+
+.Toolbar__LogoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.Toolbar img {
+    height: 5rem;
+    object-fit: cover;
+}
+
+.Toolbar__HelpContainer {
+    display: flex;
+    align-items: center;
+}
+
+.Toolbar__HelpContainer p {
+    padding: 10px;
+}
+
+.Toolbar__HelpContainer p:first-child {
+    border-right: 1px solid grey;
+}
+
+.Toolbar__ContentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Toolbar__AuthContainer {
+    display: flex;
+    align-items: center;
+}
+
+.Toolbar__CartContainer {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    border-radius: 30px;
+    padding: 2px 5px;
+}
+
+.Toolbar__CartIcon {
+    color: white;
+    margin-left: 5px;
+}
+
+.Toolbar__CartContainer span {
+    margin-left: 5px;
+    padding: 0 5px;
+    margin: 0 5px;
+    
+}
+
+.Toolbar__FavContainer {
+    background-color: palevioletred;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.Toolbar__Like {
+    color: white;
+}
+
+.Toolbar__Link {
+    border-right: 1px solid grey;
+    padding: 5px 15px;
+}

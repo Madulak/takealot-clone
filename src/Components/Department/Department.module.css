@@ -1,0 +1,108 @@
+.Department {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: rgb(13, 166, 255);
+    padding: 1rem 7rem;
+    position: relative;
+}
+
+.Department__Button {
+    border: 0;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 15.6rem;
+}
+
+.Department__List {
+    position: absolute;
+    margin-top: 27px;
+    background-color: white;
+}
+
+.Department__ListContainer {
+    position: 'fixed';
+    display: flex;
+    margin-top: '5px';
+    background-color: 'white';
+    flex-direction: row;
+}
+
+.Department__ListTitle {
+    width: 15rem;
+    box-shadow: 0px 3px 7px black;
+    padding: 0 5px;
+    /* display: ; */
+}
+
+.Department__EachDepart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* .Department__EachDepart:hover .Department__EachDepart p .Department__KeyboardIcon {
+    color: white;
+} */
+
+.Department__EachDepart p {
+    color: gray;
+}
+
+
+.Department__KeyboardIcon {
+    color: lightslategray;
+}
+
+.Department__EachDepart:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.Department__EachDepart:hover .Department__KeyboardIcon, .Department__EachDepart p:hover {
+    /* background-color: blue; */
+    color: white;
+}
+
+/* .Department__EachDepart:hover .Department__EachDepart p {
+    color: white;
+} */
+
+.Department__SearchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    /* background-color: red; */
+    width: 60vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Department__SearchContainer input {
+    border: 0;
+    /* width: ; */
+    /* width: 45rem; */
+    flex: 70%;
+    height: 100%;
+    /* padding: 6px 10px; */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Department__Search {
+    flex: 5%;
+    background-color: gray;
+    /* height: 100%; */
+    padding: 2px 0;
+}
+
+.Department__SearchContainer select {
+    /* width: 10rem; */
+    flex: 18%;
+    background-color: lightslategray;
+}
+
