@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-import Container from './Container/Container';
+import Homescreen from './Routes/Homescreen/Homescreen';
+
 
 function App() {
   return (
-    <Container />
+    <Homescreen />
   );
 }
 

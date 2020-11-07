@@ -4,12 +4,13 @@ import classes from './Container.module.css';
 import Toolbar from '../Components/Toolbar/Toolbar';
 import Department from '../Components/Department/Department';
 
-const Container = () => {
+const Container = ({children}) => {
 
     return (
         <div className={classes.Container}>
             <Toolbar />
             <Department />
+            {children}
         </div>
     );
 }

@@ -17,6 +17,10 @@
     object-fit: cover;
 }
 
+.Toolbar img:hover {
+    cursor: pointer;
+}
+
 .Toolbar__HelpContainer {
     display: flex;
     align-items: center;
@@ -46,7 +50,7 @@
     align-items: center;
     background-color: green;
     border-radius: 30px;
-    padding: 2px 5px;
+    padding: 7px 5px;
 }
 
 .Toolbar__CartIcon {
@@ -58,7 +62,8 @@
     margin-left: 5px;
     padding: 0 5px;
     margin: 0 5px;
-    
+    color: white;
+    font-weight: bold;
 }
 
 .Toolbar__FavContainer {

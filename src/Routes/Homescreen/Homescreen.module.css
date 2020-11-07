@@ -1,0 +1,14 @@
+.Homescreen {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.Homescreen__Empty {
+    flex: 0.3;
+}
+
+.Homescreen__Advert {
+    flex: 0.7;
+    background-color: lightslategray;
+    min-height: 70vh;
+}
