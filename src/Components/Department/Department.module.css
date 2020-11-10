@@ -83,6 +83,7 @@
     width: 60vw;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    margin: 5px 0;
 }
 
 .Department__SearchContainer input {
@@ -96,11 +97,16 @@
     border-bottom-left-radius: 5px;
 }
 
+.Department__Dropdown {
+    flex: 15%;
+    font-size: 12px;
+}
+
 .Department__Search {
     flex: 5%;
     background-color: gray;
     /* height: 100%; */
-    padding: 2px 0;
+    padding: 6.5px 0;
 }
 
 .Department__SearchContainer select {
@@ -109,9 +115,24 @@
     background-color: lightslategray;
 }
 
+.Department__SaleButttons {
+    display: flex;
+    border: 1px solid lightslategray;
+    border-radius: 10px;
+    background-color: lightgrey;
+    /* justify-content: space-between; */
+}
+
+.Department__SaleButttons span {
+    /* width: 100%; */
+    border-right: 1px solid black;
+    padding: 0 .7rem;
+}
+
 .Department__HoverContainer {
     display: block;
     background-color: rgba(216, 216, 216, 0.301);
+    z-index: 900;
 }
 
 .Department__HoverContainer h3 {
@@ -122,7 +143,8 @@
 }
 
 .Department__Details {
-    width: 13rem;
+    width: 12rem;
+    z-index: 900;
 }
 
 .Department__CategoryHeader {
@@ -153,6 +175,8 @@
 .Department__Featured {
     width: 10rem;
     padding-top: 30px;
+    z-index: 900;
+    background-color: white;
 }
 
 .Department__Featured h4 {

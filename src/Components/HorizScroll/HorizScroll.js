@@ -24,8 +24,9 @@ const HorizScroll = () => {
             {items.map(item => (
                 // <div key={item.id}>{item.title}</div>
                 <Card key={item.id} >
-                    {item.title}
                     <img className='HorizScroll__Image' src={logo} />
+                    <p>Xps 15 the best laptop, high speed no throtling</p>
+                    <p>R 39 000.00</p>
                 </Card>
             ))}
           </Carousel>

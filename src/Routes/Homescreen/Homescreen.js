@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Homescreen.module.css';
 import Container from '../../Container/Container';
 import HorizontalScroll from '../../Components/HorizScroll/HorizScroll';
-import Advert from '../../Components/UI/AdvertCard/AdvertCard';
+import Advert from '../../Components/Advert/Advert';
 
 const Homescreen = () => {
 

@@ -6,10 +6,18 @@ import SearchIcon from '@material-ui/icons/Search';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 // import { Button } from '@material-ui/core';
 
+import Select from 'react-select';
+
 const Department = () => {
 
     const [departName, setDepartName] = useState('');
     const [arr, setArr] = useState({});
+
+    const opt = [ ];
+     departments.forEach(el => (
+        opt.push(el)
+    ))
+    
 
     useEffect(() => {
         
@@ -79,19 +87,17 @@ const Department = () => {
             <div style={{display: 'flex', flexDirection: 'column'}}>
                 <div className={classes.Department__SearchContainer}>
                     <input placeholder='Search for products, brands...' />
-                    <select>
-                        <option>All Department</option>
-                    </select>
+                     <Select placeholder={'All Departments'} className={classes.Department__Dropdown} options={opt} />
                     <SearchIcon className={classes.Department__Search} />
                 </div>
                 {/* <br /> */}
-                <div >
-                    <button>Exclusive To Takealot</button>
-                    <button>Clearance Store</button>
-                    <button>Fasion Outlet</button>
-                    <button>Christmas</button>
-                    <button>Blue Dot CountDowns</button>
-                    <button>Brand Stores</button>
+                <div className={classes.Department__SaleButttons}>
+                    <span>Exclusive To Takealot</span>
+                    <span>Clearance Store</span>
+                    <span>Fasion Outlet</span>
+                    <span>Christmas</span>
+                    <span>Blue Dot CountDowns</span>
+                    <span>Brand Stores</span>
                 </div>
             </div>
 

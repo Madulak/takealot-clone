@@ -1,0 +1,35 @@
+.Advert {
+    position: relative;
+}
+
+.Advert .HorizScroll__Image {
+    width: 70vh;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rec-dot {
+    border-radius: 50%;
+}
+
+.rec.rec-arrow-left {
+    border-radius: 0;
+    position: absolute;
+    z-index: 900;
+    margin-left: 30px;
+    /* font-size: 14px; */
+    /* left: 0; */
+    /* margin-left: 100px; */
+    /* margin-left: 5rem; */
+}
+
+
+.rec.rec-arrow-right {
+    border-radius: 0;
+    position: absolute;
+    z-index: 900;
+    margin-right: 30px;
+    right: 0;
+    /* marg */
+    /* margin-right: 20px; */
+}

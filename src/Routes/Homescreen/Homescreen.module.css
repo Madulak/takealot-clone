@@ -9,13 +9,15 @@
 
 .Homescreen__Advert {
     flex: 0.5;
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
     min-height: 70vh;
+    /* z-index: -1; */
 }
 
 .Homescreen__Product {
     width: 70%;
     margin: auto;
+    padding: 3rem 0;
 }
 
 .Homescreen__Empty2 {

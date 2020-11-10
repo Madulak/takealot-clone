@@ -2,10 +2,13 @@ import React from 'react';
 import classes from './Toolbar.module.css';
 import logo from './takealot-2156-1120.jpg';
 
+
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const Toolbar = () => {
+
+    
 
     return (
         <div className={classes.Toolbar}>

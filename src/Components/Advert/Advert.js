@@ -12,19 +12,17 @@ const Advert = () => {
           {id: 2, title: 'item #2'},
           {id: 3, title: 'item #3'},
           {id: 4, title: 'item #4'},
-          {id: 5, title: 'item #5'}
         ]
       }
      
       
         const { items } = state;
         return (
-          <div className={'HorizScroll'}> 
-              <Carousel  itemsToShow={1}>
+          <div className={'Advert'}> 
+              <Carousel  showArrows={true} itemsToShow={1}>
                 {items.map(item => (
                     // <div key={item.id}>{item.title}</div>
                     <AdvertCard key={item.id} >
-                        {item.title}
                         <img className='HorizScroll__Image' src={logo} />
                     </AdvertCard>
                 ))}
