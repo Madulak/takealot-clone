@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Container.module.css';
+import './Container.module.css';
 
 import Toolbar from '../Components/Toolbar/Toolbar';
 import Department from '../Components/Department/Department';
@@ -7,7 +7,7 @@ import Department from '../Components/Department/Department';
 const Container = ({children}) => {
 
     return (
-        <div className={classes.Container}>
+        <div className={'Container'}>
             <Toolbar />
             <Department />
             {children}

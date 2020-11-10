@@ -8,7 +8,16 @@
 }
 
 .Homescreen__Advert {
-    flex: 0.7;
+    flex: 0.5;
     background-color: lightslategray;
     min-height: 70vh;
+}
+
+.Homescreen__Product {
+    width: 70%;
+    margin: auto;
+}
+
+.Homescreen__Empty2 {
+    flex: 0.2;
 }

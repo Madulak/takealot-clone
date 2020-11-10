@@ -12,7 +12,7 @@
     background-color: black;
     color: white;
     padding: 5px;
-    width: 15.6rem;
+    width: 11rem;
 }
 
 .Department__List {
@@ -30,7 +30,7 @@
 }
 
 .Department__ListTitle {
-    width: 15rem;
+    width: 11rem;
     box-shadow: 0px 3px 7px black;
     /* padding: 0 5px; */
     /* display: ; */
@@ -50,6 +50,8 @@
 
 .Department__EachDepart p {
     color: gray;
+    font-size: 10px;
+    margin-left: 11px
 }
 
 
@@ -58,17 +60,19 @@
 }
 
 .Department__EachDepart:hover {
-    background-color: blue;
+    background-color: rgb(13, 166, 255);
     cursor: pointer;
 }
 
-/* .Department__EachDepart:hover .Department__KeyboardIcon {
-    color: white;
-} */
-
-.Department__EachDepart:hover .Department__EachDepart p {
+.Department__EachDepart:hover .Department__KeyboardIcon  {
     color: white;
 }
+
+.Department__EachDepart:hover .Department__Title  {
+    color: white;
+}
+
+
 
 .Department__SearchContainer {
     position: relative;
@@ -107,5 +111,80 @@
 
 .Department__HoverContainer {
     display: block;
+    background-color: rgba(216, 216, 216, 0.301);
 }
 
+.Department__HoverContainer h3 {
+    color: blue;
+    margin-left: 20px;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.Department__Details {
+    width: 13rem;
+}
+
+.Department__CategoryHeader {
+    padding-left: 20px;
+    /* margin: 20px; */
+}
+
+.Department__CategoryHeader:hover {
+    background-color: rgb(13, 166, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.Department__NameTitle {
+    padding: 5px 20px;
+    font-size: 12px;
+    /* margin: 20px; */
+    color: lightslategray;
+    /* width: 100%; */
+}
+
+.Department__NameTitle:hover {
+    color: white;
+    background-color: rgb(13, 166, 255);
+    cursor: pointer;
+}
+
+.Department__Featured {
+    width: 10rem;
+    padding-top: 30px;
+}
+
+.Department__Featured h4 {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Department {
+        
+        padding: 1rem 5rem;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .Department {
+        
+        padding: 1rem 4rem;
+        position: relative;
+    }
+
+    .Department__List {
+        opacity: 0;
+    }
+
+    .Department__Button:hover .Department__List {
+        opacity: 1;
+    }
+    
+}
+
+@media only screen and (max-width: 850px) {
+    
+}

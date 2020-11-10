@@ -39,8 +39,8 @@ const Department = () => {
                     <div className={classes.Department__ListTitle}>
                         {departments.map(dep => (
                             <div key={dep.title} onMouseOver={() => setDepartName(dep.title)} className={classes.Department__EachDepart}>
-                                <p >{dep.title}</p>
-                                <KeyboardArrowRightIcon className={classes.Department__KeyboardIcon} />
+                                <p className={classes.Department__Title}>{dep.title}</p>
+                                <KeyboardArrowRightIcon size={11} className={classes.Department__KeyboardIcon} />
                             </div>
                         ))}
                     </div>
@@ -50,20 +50,22 @@ const Department = () => {
                                 <h3 >{arr.title}</h3>
                                 {/* {console.log(arr.subtitle)} */}
                                 {arr.subtitle && arr?.subtitle.map(el => (
-                                    <div key={el?.subtitle}>
-                                    <h4>{el?.subtitle}</h4>
-                                    <div>
-                                        {el?.list.map(li => (
-                                            <p key={li}>{li}</p>
-                                        ))}
-                                    </div>
+                                    <div className={classes.Department__Details} key={el?.subtitle}>
+                                        <h4 className={classes.Department__CategoryHeader}>{el?.subtitle}</h4>
+                                        <div>
+                                            {el?.list.map(li => (
+                                                <div>
+                                                    <p className={classes.Department__NameTitle} key={li}>{li}</p>
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 ))}
                             </div>
-                            <div style={{backgroundColor: 'gray'}}>
-                                <h3>{arr.features?.title}</h3>
+                            <div className={classes.Department__Featured}>
+                                <h4>{arr.features?.title}</h4>
                                 { arr.features?.list.map(el => (
-                                    <p key={el}>{el}</p>
+                                    <p className={classes.Department__NameTitle} key={el}>{el}</p>
                                 ))}
                                 {/* {console.log(arr.features?.title)} */}
                             </div>

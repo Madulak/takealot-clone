@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './Homescreen.module.css';
 import Container from '../../Container/Container';
+import HorizontalScroll from '../../Components/HorizScroll/HorizScroll';
+import Advert from '../../Components/UI/AdvertCard/AdvertCard';
 
 const Homescreen = () => {
 
@@ -12,11 +14,15 @@ const Homescreen = () => {
 
                     </div>
                     <div className={classes.Homescreen__Advert}>
-                        <h1>Home Screen</h1>
+                        <Advert />
+                    </div>
+                    <div className={classes.Homescreen__Empty2}>
+
                     </div>
                 </div>
-                <div>
+                <div className={classes.Homescreen__Product}>
                     <h3>Pass </h3>
+                        <HorizontalScroll />
                 </div>
             </div>
             
