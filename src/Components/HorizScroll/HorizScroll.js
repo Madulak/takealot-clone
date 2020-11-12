@@ -1,9 +1,10 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import  './HorizScroll.css';
-import Card from '../UI/Card/Card';
+import Cards from '../UI/Card/Card';
 
 import logo from './lead-img-dell-xps-15-17-removebg-preview.png';
+import { Card, CardContent } from '@material-ui/core';
  
 const HorizScroll = () => {
   const state = {
@@ -23,11 +24,15 @@ const HorizScroll = () => {
           <Carousel pagination={false} itemsToShow={3}>
             {items.map(item => (
                 // <div key={item.id}>{item.title}</div>
-                <Card key={item.id} >
-                    <img className='HorizScroll__Image' src={logo} />
-                    <p>Xps 15 the best laptop, high speed no throtling</p>
-                    <p>R 39 000.00</p>
-                </Card>
+                // <Cards key={item.id} >
+                    <Card className={'CardContainer'}>
+                      <CardContent>
+                        <img className='HorizScroll__Image' src={logo} />
+                        <p>Xps 15 the best laptop, high speed no throtling</p>
+                        <p>R 39 000.00</p>
+                      </CardContent>
+                    </Card>
+                // </Cards>
             ))}
           </Carousel>
       </div>

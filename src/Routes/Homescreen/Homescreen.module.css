@@ -15,9 +15,11 @@
 }
 
 .Homescreen__Product {
-    width: 70%;
+    /* width: 100%; */
     margin: auto;
-    padding: 3rem 0;
+    padding: 3rem 10rem;
+
+    background-color: rgb(214, 214, 214);
 }
 
 .Homescreen__Empty2 {

@@ -55,3 +55,17 @@
     width: 100%;
     object-fit: cover;
 }
+
+.CardContainer {
+    margin: 5px;
+    width: 20rem;
+}
+
+.CardContainer:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: 1s;
+}
+
+.CardContainer p {
+    margin: 1rem;
+}

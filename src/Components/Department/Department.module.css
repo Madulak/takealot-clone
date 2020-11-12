@@ -118,14 +118,14 @@
 .Department__SaleButttons {
     display: flex;
     border: 1px solid lightslategray;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: lightgrey;
     /* justify-content: space-between; */
 }
 
 .Department__SaleButttons span {
     /* width: 100%; */
-    border-right: 1px solid black;
+    border-right: 1px solid grey;
     padding: 0 .7rem;
 }
 
