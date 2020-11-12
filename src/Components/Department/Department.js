@@ -87,7 +87,11 @@ const Department = () => {
             <div style={{display: 'flex', flexDirection: 'column'}}>
                 <div className={classes.Department__SearchContainer}>
                     <input placeholder='Search for products, brands...' />
-                     <Select placeholder={'All Departments'} className={classes.Department__Dropdown} options={opt} />
+                     {/* <Select placeholder={'All Departments'} className={classes.Department__Dropdown} options={opt} /> */}
+                     <select >
+                         <option>All Departments</option>
+                         <option>Automotive & DIY</option>
+                     </select>
                     <SearchIcon className={classes.Department__Search} />
                 </div>
                 {/* <br /> */}

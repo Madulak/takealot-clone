@@ -8,8 +8,15 @@
     object-fit: cover;
 }
 
-.rec-dot {
-    border-radius: 50%;
+.rec .rec-dot {
+    border-radius: 60%;
+    /* background-color: black; */
+    border: none;
+    
+}
+
+.rec .rec-dot_active {
+    background-color: grey;
 }
 
 .rec.rec-arrow-left {
