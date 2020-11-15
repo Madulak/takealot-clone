@@ -1,0 +1,13 @@
+.Signup {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.Signup__FormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}

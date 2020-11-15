@@ -5,6 +5,7 @@ import logo from './takealot-2156-1120.jpg';
 
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { NavLink } from 'react-router-dom';
 
 const Toolbar = () => {
 
@@ -13,7 +14,7 @@ const Toolbar = () => {
     return (
         <div className={classes.Toolbar}>
             <div className={classes.Toolbar__LogoContainer}>
-                <img src={logo} alt='logo' />
+                <NavLink to='/'><img src={logo} alt='logo' /></NavLink>
                 <div className={classes.Toolbar__HelpContainer}>
                     <p> help</p>
                     <p> Sell on Takealot</p>
@@ -23,8 +24,8 @@ const Toolbar = () => {
             <div className={classes.Toolbar__ContentContainer}>
                 
                 <div className={classes.Toolbar__AuthContainer}>
-                    <p className={classes.Toolbar__Link}> Login</p>
-                    <p className={classes.Toolbar__Link}> Register</p>
+                    <NavLink to='/login'> <p className={classes.Toolbar__Link}> Login</p></NavLink>
+                    <NavLink to='/signup'><p className={classes.Toolbar__Link}> Register</p></NavLink>
                     <p className={classes.Toolbar__Link}> Orders</p>
                     <p > My Account</p>
                     <div className={classes.Toolbar__FavContainer}>

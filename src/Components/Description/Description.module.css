@@ -1,0 +1,14 @@
+.Description {
+    display: flex;
+}
+
+.Description__ImageContainer {
+    height: 20rem;
+    width: 20rem;
+}
+
+.Description__Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

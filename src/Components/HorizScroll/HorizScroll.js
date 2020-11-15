@@ -25,13 +25,15 @@ const HorizScroll = () => {
             {items.map(item => (
                 // <div key={item.id}>{item.title}</div>
                 // <Cards key={item.id} >
-                    <Card className={'CardContainer'}>
-                      <CardContent>
-                        <img className='HorizScroll__Image' src={logo} />
-                        <p>Xps 15 the best laptop, high speed no throtling</p>
-                        <p>R 39 000.00</p>
-                      </CardContent>
-                    </Card>
+                    // <NavLink >
+                      <Card className={'CardContainer'}>
+                        <CardContent>
+                          <img className='HorizScroll__Image' src={logo} />
+                          <p>Xps 15 the best laptop, high speed no throtling</p>
+                          <p>R 39 000.00</p>
+                        </CardContent>
+                      </Card>
+                    // </NavLink>
                 // </Cards>
             ))}
           </Carousel>
