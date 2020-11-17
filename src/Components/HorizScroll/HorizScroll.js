@@ -2,38 +2,30 @@ import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import  './HorizScroll.css';
 import Cards from '../UI/Card/Card';
+import currency from 'currency-formatter';
+import { NavLink } from 'react-router-dom';
 
 import logo from './lead-img-dell-xps-15-17-removebg-preview.png';
 import { Card, CardContent } from '@material-ui/core';
+
  
-const HorizScroll = () => {
-  const state = {
-    items: [
-      {id: 1, title: 'item #1', },
-      {id: 2, title: 'item #2'},
-      {id: 3, title: 'item #3'},
-      {id: 4, title: 'item #4'},
-      {id: 5, title: 'item #5'}
-    ]
-  }
- 
+const HorizScroll = ({computers}) => {
   
-    const { items } = state;
     return (
       <div className={'HorizScroll'}> 
           <Carousel pagination={false} itemsToShow={3}>
-            {items.map(item => (
+            {computers.map(item => (
                 // <div key={item.id}>{item.title}</div>
                 // <Cards key={item.id} >
-                    // <NavLink >
-                      <Card className={'CardContainer'}>
+                    <NavLink key={item._id} to={'/product/'+item._id}>
+                      <Card  className={'CardContainer'}>
                         <CardContent>
-                          <img className='HorizScroll__Image' src={logo} />
-                          <p>Xps 15 the best laptop, high speed no throtling</p>
-                          <p>R 39 000.00</p>
+                          <img className='HorizScroll__Image' src={item.imgUrl} />
+                          <p>{item.title}</p>
+                          <p>{currency.format(item.price, { code: 'ZAR'})}</p>
                         </CardContent>
                       </Card>
-                    // </NavLink>
+                    </NavLink>
                 // </Cards>
             ))}
           </Carousel>

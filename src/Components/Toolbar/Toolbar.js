@@ -7,9 +7,11 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { NavLink } from 'react-router-dom';
 
+import { useSelector } from 'react-redux';
+
 const Toolbar = () => {
 
-    
+    const cart = useSelector(state => state.user.cart);
 
     return (
         <div className={classes.Toolbar}>
@@ -33,7 +35,7 @@ const Toolbar = () => {
                     </div>
                     <div className={classes.Toolbar__CartContainer}>
                         <ShoppingCartIcon className={classes.Toolbar__CartIcon} />
-                        <span>0</span>
+                        <span>{cart.length}</span>
                     </div>
                 </div>
             </div>

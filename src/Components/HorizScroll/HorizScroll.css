@@ -53,12 +53,14 @@
 
 .HorizScroll__Image {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    height: 20rem;
 }
 
 .CardContainer {
     margin: 5px;
     width: 20rem;
+    height: 30rem;
 }
 
 .CardContainer:hover {

@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Description.module.css';
 
-const Description = ({image}) => {
+const Description = ({image, description, title, brand, features}) => {
 
     return (
         <div className={classes.Description}>
@@ -10,9 +10,9 @@ const Description = ({image}) => {
             </div>
             <div className={classes.Description__DescripContainer}>
                 <div>
-                    <h3>Description of the product will be placed here. I am happy with it of slfjls lorem salulm</h3>4
-                    <p>Title</p>
-                    <h4>title</h4>
+                    <h3>{description}</h3>
+                    <p>{brand}</p>
+                    <h4>{title}</h4>
                 </div>
                 <div>
                     <h4>In Stock</h4>
