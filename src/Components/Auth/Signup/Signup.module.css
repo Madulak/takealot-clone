@@ -1,6 +1,48 @@
 .Signup {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
     background-color: white;
-    padding: 3rem;
+    border-radius: 5px;
+}
+
+.Signup h4 {
+    text-align: center;
+    color: rgb(36, 35, 35);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Signup label {
+    font-size: 13px;
+    color: rgb(102, 96, 96);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Signup input, .Signup button {
+    margin: .3rem 0;
+}
+
+.Signup input {
+    width: 20rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Signup button {
+    border: 1px solid lightgrey;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Signup button:hover {
+    cursor: pointer;
+}
+
+.Signup label {
+    font-size: 13px;
+    color: rgb(102, 96, 96);
+    font-family: 'Courier New', Courier, monospace;
 }

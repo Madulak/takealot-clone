@@ -1,0 +1,41 @@
+.Login {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.Login h4 {
+    text-align: center;
+    color: rgb(36, 35, 35);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Login label {
+    font-size: 13px;
+    color: rgb(102, 96, 96);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Login input, .Login button {
+    margin: .3rem 0;
+}
+
+.Login input {
+    width: 20rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Login button {
+    border: 1px solid lightgrey;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Login button:hover {
+    cursor: pointer;
+}

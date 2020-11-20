@@ -40,3 +40,11 @@
     /* marg */
     /* margin-right: 20px; */
 }
+
+@media only screen and (max-width: 900px) {
+    .Advert .HorizScroll__Image {
+        width: 70vh;
+        height: 100%;
+        object-fit: cover;
+    }
+}

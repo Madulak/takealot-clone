@@ -14,6 +14,10 @@
     /* z-index: -1; */
 }
 
+.Homescreen__Empty2 {
+    flex: 0.2;
+}
+
 .Homescreen__Product {
     /* width: 100%; */
     margin: auto;
@@ -22,6 +26,21 @@
     background-color: rgb(214, 214, 214);
 }
 
-.Homescreen__Empty2 {
-    flex: 0.2;
+
+@media only screen and (max-width: 1100px) {
+
+    .Homescreen__Empty {
+        flex: 0.0;
+    }
+
+    .Homescreen__Advert {
+        flex: 1;
+        /* background-color: lightslategray; */
+        min-height: 70vh;
+        /* z-index: -1; */
+    }
+    
+    .Homescreen__Empty2 {
+        flex: 0.0;
+    }
 }

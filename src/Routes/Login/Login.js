@@ -11,7 +11,9 @@ const Login = () => {
         <div className={classes.Login}>
             <Toolbar />
             <Blue />
-            <LoginForm />
+            <div className={classes.Login__Form}>
+                <LoginForm />
+            </div>
         </div>
     );
 }

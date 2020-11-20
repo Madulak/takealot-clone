@@ -1,14 +1,54 @@
 .Description {
     display: flex;
+    flex: 0.7;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    height: fit-content;
 }
 
 .Description__ImageContainer {
     height: 20rem;
     width: 20rem;
+    border: 1px solid lightgray;
+}
+
+.Description__ImageContainer:hover {
+    border: 1px solid blue;
 }
 
 .Description__Image {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.Description__DescripContainer {
+    margin-left: 1.5rem;
+}
+
+.Description__Price {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .Description {
+        flex: 0.9;
+    }
+
+    .Description__Price {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Description {
+        flex-direction: column;
+    }
+
+    .Description__ImageContainer {
+        width: 100%;
+    }
 }

@@ -84,7 +84,7 @@ const Department = () => {
                 
             </div>
 
-            <div style={{display: 'flex', flexDirection: 'column'}}>
+            <div className={classes.Department__ContentContainer__Search}>
                 <div className={classes.Department__SearchContainer}>
                     <input placeholder='Search for products, brands...' />
                      {/* <Select placeholder={'All Departments'} className={classes.Department__Dropdown} options={opt} /> */}

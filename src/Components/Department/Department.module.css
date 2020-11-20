@@ -5,6 +5,7 @@
     background-color: rgb(13, 166, 255);
     padding: 1rem 7rem;
     position: relative;
+    min-height: 1.5rem;
 }
 
 .Department__Button {
@@ -183,6 +184,11 @@
     margin-left: 20px;
 }
 
+.Department__ContentContainer__Search {
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (max-width: 1200px) {
     .Department {
         
@@ -206,9 +212,15 @@
     .Department__Button:hover .Department__List {
         opacity: 1;
     }
+
+    .Department__ContentContainer__Search {
+        display: none;
+    }
     
 }
 
 @media only screen and (max-width: 850px) {
-    
+    .Department__Button {
+        display: none;
+    }
 }

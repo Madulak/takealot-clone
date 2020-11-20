@@ -4,6 +4,7 @@ export const LOGIN = 'LOGIN';
 export const SIGNUP = 'SIGNUP';
 export const GET_COMPUTERS = 'GET_COMPUTERS';
 export const GET_SINGLE_PRODUCT = 'GET_SINGLE_PRODUCT';
+export const ADD_TO_CART = 'ADD_TO_CART';
 
 
 const baseUrl = 'http://localhost:8080';
@@ -72,5 +73,13 @@ export const get_single_product = (id) => {
             throw error;
         }
         dispatch({type: GET_SINGLE_PRODUCT, product: response.data.data})
+    }
+}
+
+export const add_to_cart = (data) => {
+
+    return dispatch => {
+
+        dispatch({type: ADD_TO_CART, cart: data})
     }
 }

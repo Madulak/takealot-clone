@@ -17,7 +17,7 @@ const HorizScroll = ({computers}) => {
             {computers.map(item => (
                 // <div key={item.id}>{item.title}</div>
                 // <Cards key={item.id} >
-                    <NavLink key={item._id} to={'/product/'+item._id}>
+                    <NavLink className={'HorizScroll__Link'} key={item._id} to={'/product/'+item._id}>
                       <Card  className={'CardContainer'}>
                         <CardContent>
                           <img className='HorizScroll__Image' src={item.imgUrl} />

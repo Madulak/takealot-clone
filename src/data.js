@@ -41,25 +41,38 @@ export const departments = [
         },
         subtitle: [
            {
-               subtitle: 'automotive',
+               subtitle: 'Baby & Toddler',
                list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
+                'Baby Clothing',
+                'Health & Safety',
+                'Changing & Feeding',
+                'Baby Care & Nursery',
+                'Travel & Play',
                 ]
            },
-           {
-            subtitle: 'Diy & Improvement',
+           
+        ]
+    },
+    {
+        title: 'Beauty',
+        features: {
+            title: 'Featured Stores',
             list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
-             ]
-             },
+                'Black and Decker'
+            ]
+        },
+        subtitle: [
+           {
+               subtitle: 'Books & Courses',
+               list: [
+                'Luxury & Beauty',
+                'Make Up',
+                'Body Care',
+                'Skin Care',
+                'Hair Care',
+                ]
+           },
+           
         ]
     },
     {
@@ -72,25 +85,20 @@ export const departments = [
         },
         subtitle: [
            {
-               subtitle: 'automotive',
+               subtitle: 'All Books',
                list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
+                'Fiction',
+                'Non Fiction',
+                "Children's Books",
+                'Inspired Reading',
+                'Christian Living',
+                'Cook Books',
+                'Ebook',
+                'Bestsellers',
+                'International Releases'
                 ]
            },
-           {
-            subtitle: 'Diy & Improvement',
-            list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
-             ]
-             },
+           
         ]
     },
     {
@@ -98,18 +106,21 @@ export const departments = [
         features: {
             title: 'Featured Stores',
             list: [
-                'Black and Decker'
+                'Campground',
+                'Eco Earth',
+                'GoPro'
             ]
         },
         subtitle: [
            {
-               subtitle: 'automotive',
+               subtitle: 'Camping & Outdoor',
                list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
+                'Tents & Shelters',
+                'Camping Furniture',
+                'Coolers & Refrigeration',
+                'Outdoor Kitchen',
+                'Lighting',
+                'Hiking & Backpacks'
                 ]
            },
            {
@@ -125,7 +136,7 @@ export const departments = [
         ]
     },
     {
-        title: 'Cellphones & Wearables',
+        title: 'Cellphones',
         features: {
             title: 'Featured Stores',
             list: [
@@ -134,25 +145,14 @@ export const departments = [
         },
         subtitle: [
            {
-               subtitle: 'automotive',
+               subtitle: 'Cellphones & Wearables',
                list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
+                'Cellullar Accessories',
+                'Airtime & Data',
+                'Tablets & Kindles',
+                'Wearable Tech',
                 ]
            },
-           {
-            subtitle: 'Diy & Improvement',
-            list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
-             ]
-             },
         ]
     },
     {
@@ -167,21 +167,19 @@ export const departments = [
            {
                subtitle: 'automotive',
                list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
+                'Men',
+                'Women',
+                'Kids',
                 ]
            },
            {
-            subtitle: 'Diy & Improvement',
+            subtitle: 'Luggage',
             list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
+             'Suitcases',
+             'Business Bags',
+             'Student Bags',
+             'School Bags',
+             'Wallets & Purses',
              ]
              },
         ]
@@ -191,61 +189,36 @@ export const departments = [
         features: {
             title: 'Featured Stores',
             list: [
-                'Black and Decker'
+                'Apple',
+                'Asus',
+                'Dell',
+                'GoPro',
+                'HP',
+                'LogiTech',
+                'Microsoft',
+                'NetGear',
+                'Samsung',
+                'Seagate'
             ]
         },
         subtitle: [
            {
-               subtitle: 'automotive',
+               subtitle: 'Computers',
                list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
+                'Computers',
+                'Monitors',
+                'Computer Components',
+                'Computer Accessories',
+                'Laptops',
+                'Laptop Accessories',
+                'Networking',
+                'Software',
+                'Storage Devices',
+                'Photography',
+                'Action Cams & Drones',
+                'Vlogging'
                 ]
            },
-           {
-            subtitle: 'Diy & Improvement',
-            list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
-             ]
-             },
-        ]
-    },
-    {
-        title: 'Camping & Outdoor',
-        features: {
-            title: 'Featured Stores',
-            list: [
-                'Black and Decker'
-            ]
-        },
-        subtitle: [
-           {
-               subtitle: 'automotive',
-               list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
-                ]
-           },
-           {
-            subtitle: 'Diy & Improvement',
-            list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
-             ]
-             },
         ]
     },
     {
@@ -258,56 +231,16 @@ export const departments = [
         },
         subtitle: [
            {
-               subtitle: 'automotive',
+               subtitle: 'Gaming',
                list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
+                'Playstation',
+                'Xbox',
+                'Nintendo',
+                'PC Gaming',
+                'Gaming Merchandise',
                 ]
            },
-           {
-            subtitle: 'Diy & Improvement',
-            list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
-             ]
-             },
-        ]
-    },
-    {
-        title: 'Camping & Outdoor',
-        features: {
-            title: 'Featured Stores',
-            list: [
-                'Black and Decker'
-            ]
-        },
-        subtitle: [
-           {
-               subtitle: 'automotive',
-               list: [
-                'engine Parts',
-                'Tires and Accesories',
-                'Car care & Cleaning',
-                'Motocycle & Accessories',
-                'Solar & Power',
-                ]
-           },
-           {
-            subtitle: 'Diy & Improvement',
-            list: [
-             'Diy Power tools',
-             'Home Improvement',
-             'Industrial Power Tools',
-             'Protective Equipment',
-             'Home Security',
-             ]
-             },
+           
         ]
     },
     {

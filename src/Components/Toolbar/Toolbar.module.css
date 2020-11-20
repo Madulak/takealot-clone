@@ -45,12 +45,20 @@
     align-items: center;
 }
 
+.Toolbar__MyAccount {
+    margin-left: 10px
+}
+
 .Toolbar__CartContainer {
     display: flex;
     align-items: center;
     background-color: green;
     border-radius: 30px;
     padding: 7px 5px;
+}
+
+.Toolbar__CartContainer:hover {
+    cursor: pointer;
 }
 
 .Toolbar__CartIcon {
@@ -75,6 +83,10 @@
     margin: 0 5px;
 }
 
+.Toolbar__FavContainer:hover {
+    cursor: pointer;
+}
+
 .Toolbar__Like {
     color: white;
 }
@@ -84,10 +96,61 @@
     padding: 5px 15px;
 }
 
-@media only screen and (max-width: 1100) {
+.Toolbar__MenuIcon {
+    display: none;
+}
+
+.Toolbar__SearchIcon {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
     .Toolbar {
         
         padding: 0 5rem;
         /* background-color: lightblue; */
     }
+
+    .Toolbar__HelpContainer {
+        display: none;
+    }
+
+    .Toolbar__ContentContainer p {
+        display: none;
+    }
+
+    .Toolbar__MyAccount {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Toolbar {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Toolbar {
+        padding: 0 1rem;
+    }
+
+    .Toolbar__CartContainer, .Toolbar__FavContainer {
+        display: none;
+    }
+
+    .Toolbar__LogoContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .Toolbar__MenuIcon {
+        display: block;
+    }
+    
+    .Toolbar__SearchIcon {
+        display: block;
+    }
+
 }

@@ -71,3 +71,7 @@
 .CardContainer p {
     margin: 1rem;
 }
+
+.HorizScroll__Link {
+    text-decoration: none;
+}

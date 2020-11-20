@@ -1,7 +1,13 @@
 import React from 'react';
 import classes from './Description.module.css';
 
-const Description = ({image, description, title, brand, features}) => {
+import currency from 'currency-formatter';
+import { Button } from '@material-ui/core';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import AddIcon from '@material-ui/icons/Add';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+
+const Description = ({image, description, title, brand, features, price}) => {
 
     return (
         <div className={classes.Description}>
@@ -21,6 +27,15 @@ const Description = ({image, description, title, brand, features}) => {
                     <ul>
                         <li>Free Delivery</li>
                     </ul>
+                </div>
+                
+                <div className={classes.Description__Price}>
+                    <h2>{currency.format(price, { code: 'ZAR'})}</h2>
+                    <p>Free delivery</p>
+                    {/* <button></button> */}
+                    <Button className={classes.Price__AddCart}> <AddIcon /> <ShoppingCartIcon /> Add to Cart</Button><br />
+                    <Button className={classes.Price__AddList}> <FavoriteBorderIcon /> Add to List</Button>
+
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { GET_COMPUTERS, LOGIN, GET_SINGLE_PRODUCT } from './actions';
+import { GET_COMPUTERS, LOGIN, GET_SINGLE_PRODUCT, ADD_TO_CART } from './actions';
 
 const initialState = {
     user: null,
@@ -25,6 +25,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 product: action.product
+            }
+        case ADD_TO_CART:
+            return {
+                ...state,
+                cart: state.cart.concat(action.cart)
             }
 
         default:

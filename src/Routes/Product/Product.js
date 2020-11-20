@@ -32,6 +32,7 @@ const Product = () => {
                     image={product.imgUrl}
                     brand={product.brand}
                     features={product.features}
+                    price={product.price}
 
                 />
                 <Price price={product.price} />

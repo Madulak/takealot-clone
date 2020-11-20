@@ -34,7 +34,7 @@ const Login = () => {
 
     return (
         <form onSubmit={LoginHandler} className={classes.Login}>
-            <h4>Admin Signup</h4>
+            <h4>Login</h4>
            
             <label>Email</label>
             <input value={email} onChange={e => setEmail(e.target.value)} type='email' />
