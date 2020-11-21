@@ -54,13 +54,13 @@
 .HorizScroll__Image {
     width: 100%;
     object-fit: contain;
-    height: 20rem;
+    height: 10rem;
 }
 
 .CardContainer {
-    margin: 5px;
-    width: 20rem;
-    height: 30rem;
+    margin: 10px;
+    width: 18rem;
+    height: 20rem;
 }
 
 .CardContainer:hover {
@@ -74,4 +74,36 @@
 
 .HorizScroll__Link {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .HorizScroll__Image {
+        width: 100%;
+        object-fit: contain;
+        height: 15rem;
+    }
+    
+    .CardContainer {
+        margin: 10px;
+        width: 15rem;
+        height: 25rem;
+    }
+}   
+
+@media only screen and (max-width: 900px) {
+    .HorizScroll__Image {
+        width: 100%;
+        object-fit: contain;
+        height: 10rem;
+    }
+    
+    .CardContainer {
+        margin: 10px;
+        width: 15rem;
+        height: 20rem;
+    }
 }

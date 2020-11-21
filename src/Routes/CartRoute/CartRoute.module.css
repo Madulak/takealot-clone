@@ -1,0 +1,17 @@
+.CartRoute {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 3rem;
+    background-color: rgb(236, 236, 236);
+    height: min-content;
+    position: relative;
+    min-height: 70vh;
+}
+
+.CartRoute__CardSection {
+    flex: 0.7;
+}
+
+.CartRoute__FullPrice {
+    flex: 0.2;
+}

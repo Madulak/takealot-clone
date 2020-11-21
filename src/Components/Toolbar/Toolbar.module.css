@@ -55,6 +55,7 @@
     background-color: green;
     border-radius: 30px;
     padding: 7px 5px;
+    text-decoration: none;
 }
 
 .Toolbar__CartContainer:hover {
@@ -102,6 +103,10 @@
 
 .Toolbar__SearchIcon {
     display: none;
+}
+
+.Toolbar__MenuIcon:hover {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1100px) {

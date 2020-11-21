@@ -7,7 +7,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AddIcon from '@material-ui/icons/Add';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
-const Description = ({image, description, title, brand, features, price}) => {
+const Description = ({image, description, title, brand, features, price, cart}) => {
 
     return (
         <div className={classes.Description}>
@@ -34,7 +34,7 @@ const Description = ({image, description, title, brand, features, price}) => {
                     <p>Free delivery</p>
                     {/* <button></button> */}
                     <Button className={classes.Price__AddCart}> <AddIcon /> <ShoppingCartIcon /> Add to Cart</Button><br />
-                    <Button className={classes.Price__AddList}> <FavoriteBorderIcon /> Add to List</Button>
+                    <Button onClick={() => cart()} className={classes.Price__AddList}> <FavoriteBorderIcon /> Add to List</Button>
 
                 </div>
             </div>

@@ -32,7 +32,7 @@ const Homescreen = () => {
                     </div>
                 </div>
                 <div className={classes.Homescreen__Product}>
-                    <h3>Pass </h3>
+                    <h3>Laptop </h3>
                         <HorizontalScroll computers={computers} />
                 </div>
             </div>

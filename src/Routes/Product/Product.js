@@ -20,6 +20,20 @@ const Product = () => {
     useEffect(() => {
         dispatch(productActions.get_single_product(id))
     },[])
+
+    const addToCartHandler = () => {
+        const data = {
+            id: product._id,
+            title: product.title,
+            description: product.description,
+            imgUrl: product.imgUrl,
+            brand: product.brand,
+            features: product.features,
+            price: product.price,
+            quantity: 1,
+        }
+        dispatch(productActions.add_to_cart(data))
+    }
     
     return (
         <div className={classes.Product}>
@@ -33,9 +47,10 @@ const Product = () => {
                     brand={product.brand}
                     features={product.features}
                     price={product.price}
+                    cart={addToCartHandler}
 
                 />
-                <Price price={product.price} />
+                <Price price={product.price} cart={addToCartHandler} />
             </div>
         </div>
     );

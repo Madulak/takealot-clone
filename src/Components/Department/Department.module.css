@@ -184,6 +184,15 @@
     margin-left: 20px;
 }
 
+.Department__ContentContainer__Search select {
+    background-color: blue;
+    padding: 7px
+}
+
+select::-webkit-outer-spin-button {
+    background-color: blue;
+}
+
 .Department__ContentContainer__Search {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Toolbar.module.css';
 import logo from './takealot-2156-1120.jpg';
 
@@ -10,16 +10,29 @@ import SearchIcon from '@material-ui/icons/Search';
 import { NavLink } from 'react-router-dom';
 
 import { useSelector } from 'react-redux';
-import { IconButton } from '@material-ui/core';
+// import { IconButton } from '@material-ui/core';
+import DrawerCard from '../UI/DrawerCard/DrawerCard';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import { departments } from '../../data';
 
-const Toolbar = ({drawer}) => {
+const Toolbar = () => {
 
     const cart = useSelector(state => state.user.cart);
 
+    const [open, setOpen] = useState(false);
+    const drawerHandler = () => {
+            setOpen(state => !state);
+    }
+
     return (
         <div className={classes.Toolbar}>
+            <SwipeableDrawer anchor='left' open={open} onClose={drawerHandler} >
+                {departments.map(el => (
+                    <DrawerCard onClick={drawerHandler} key={el.title} name={el.title} />
+                ))}
+            </SwipeableDrawer>
             <div className={classes.Toolbar__LogoContainer}>
-                <div className={classes.Toolbar__MenuIcon} onClick={() => drawer()}>
+                <div className={classes.Toolbar__MenuIcon} onClick={drawerHandler}>
                     <MenuIcon  />
                 </div>
                 <NavLink to='/'><img src={logo} alt='logo' /></NavLink>
@@ -42,10 +55,12 @@ const Toolbar = ({drawer}) => {
                     <div className={classes.Toolbar__FavContainer}>
                         <FavoriteIcon className={classes.Toolbar__Like} />
                     </div>
-                    <div className={classes.Toolbar__CartContainer}>
-                        <ShoppingCartIcon className={classes.Toolbar__CartIcon} />
-                        <span>{cart.length}</span>
-                    </div>
+                    {/* <div > */}
+                        <NavLink to='/cart' className={classes.Toolbar__CartContainer}>
+                            <ShoppingCartIcon className={classes.Toolbar__CartIcon} />
+                            <span>{cart.length}</span>
+                        </NavLink>
+                    {/* </div> */}
                 </div>
             </div>
         </div>

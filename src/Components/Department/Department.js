@@ -4,7 +4,6 @@ import classes from './Department.module.css';
 import { departments } from '../../data';
 import SearchIcon from '@material-ui/icons/Search';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
-// import { Button } from '@material-ui/core';
 
 import Select from 'react-select';
 
@@ -88,9 +87,10 @@ const Department = () => {
                 <div className={classes.Department__SearchContainer}>
                     <input placeholder='Search for products, brands...' />
                      {/* <Select placeholder={'All Departments'} className={classes.Department__Dropdown} options={opt} /> */}
-                     <select >
-                         <option>All Departments</option>
-                         <option>Automotive & DIY</option>
+                     <select className={classes.Department__Dropdown}>
+                         {departments.map(el => (
+                             <option key={el.title} value={el.title}>{el.title}</option>
+                         ))}
                      </select>
                     <SearchIcon className={classes.Department__Search} />
                 </div>
